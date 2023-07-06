@@ -27,6 +27,10 @@ namespace ECDSAToECDH
         /// </summary>
         public string SharedGeneratedKey { get; set; }
         /// <summary>
+        /// This is for assigning a unique ID to the variable.
+        /// </summary>
+        public string? UniqueIdentifier { get; set; }
+        /// <summary>
         /// This is the shared secret produced from PrivateKey and SharedPublicKey
         /// </summary>
         public string SharedSecretHex { get { return GenerateSharedSecret(); } }
@@ -37,17 +41,14 @@ namespace ECDSAToECDH
 
         private string GenerateSharedSecret()
         {
-            BigInteger P, G, a, y, ka;
+            BigInteger P, a, y, ka;
 
             BigInteger a1 = BigInteger.Parse(PrivateKey, NumberStyles.AllowHexSpecifier);//converts hex private key into big int.
             BigInteger a2 = BigInteger.Parse(PublicKey, NumberStyles.AllowHexSpecifier);//converts hex public key into big int.
-            BigInteger b1 = BigInteger.Parse(SharedPublicKey, NumberStyles.AllowHexSpecifier);//converts hex shared public key into big int.
             BigInteger b2 = BigInteger.Parse(SharedGeneratedKey, NumberStyles.AllowHexSpecifier);//converts hex shared public key into big int.
-
 
             P = a2;
             a = a1;
-            G = b1;
             y = b2;
 
             ka = power(y, a, P);

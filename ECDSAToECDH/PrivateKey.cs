@@ -9,7 +9,7 @@ namespace ECDSAToECDH
 {
     public class PrivateKeyHex
     {
-        public EllipticCurve.PrivateKey PrivateKey { get; set; }
+        public PrivateKey PrivateKey { get; set; }
         public bool AddPrefix { get; set; }
         public string HexPrivateKey { get { return GenerateHexPrivateKeyFromPrivateKey(); } }
         public string HexPublicKey { get { return GenerateHexPublicKeyFromPrivateKey(); } }
