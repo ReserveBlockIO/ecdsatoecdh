@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>ECDSAToECDH</Title>
+    <Version>1.0.0</Version>
+    <Authors>Mathis1337</Authors>
+    <Company>ReserveBlock Foundation</Company>
+    <Description>ECDSA and ECDH package for easy key creation and encryption</Description>
+    <Copyright>MIT</Copyright>
+    <PackageProjectUrl>https://github.com/ReserveBlockIO/ecdsatoecdh</PackageProjectUrl>
+    <PackageIcon>ecdsa.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="ecdsa.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
