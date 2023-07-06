@@ -12,7 +12,9 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ReserveBlockIO/ecdsatoecdh)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ReserveBlockIO/ecdsatoecdh)
 
-![GitHub Release Date](https://img.shields.io/github/release-date/ReserveBlockIO/ecdsatoecdh)
+![Nuget](https://img.shields.io/nuget/dt/ECDSAToECDH)
+
+Nuget: https://www.nuget.org/packages/ECDSAToECDH/
 
 This project aims to make using ECDSA and ECDH together more simple.
 You can create ECDSA keypairs and sign
