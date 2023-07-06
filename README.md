@@ -1,5 +1,19 @@
 # ECDSAToECDH
 
+[![Generic badge](https://img.shields.io/badge/IDE-VS2022-blue.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/C%23-10%2E0-blue.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/%2ENet%20Core-6%2E0-blue.svg)](https://shields.io/)
+
+![license](https://img.shields.io/github/license/ReserveBlockIO/ecdsatoecdh)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ReserveBlockIO/ecdsatoecdh/dotnet.yml)
+![issues](https://img.shields.io/github/issues/ReserveBlockIO/ecdsatoecdh)
+![Discord](https://img.shields.io/discord/917499597692211260?label=discord)
+
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ReserveBlockIO/ecdsatoecdh)
+![GitHub last commit](https://img.shields.io/github/last-commit/ReserveBlockIO/ecdsatoecdh)
+
+![GitHub Release Date](https://img.shields.io/github/release-date/ReserveBlockIO/ecdsatoecdh)
+
 This project aims to make using ECDSA and ECDH together more simple.
 You can create ECDSA keypairs and sign
 You can also take that keypair and perform an ECDH shared secret encryption process.
