@@ -16,6 +16,8 @@
 
 Nuget: https://www.nuget.org/packages/ECDSAToECDH/
 
+`> dotnet add package ECDSAToECDH --version 1.0.0`
+
 This project aims to make using ECDSA and ECDH together more simple.
 You can create ECDSA keypairs and sign
 You can also take that keypair and perform an ECDH shared secret encryption process.
