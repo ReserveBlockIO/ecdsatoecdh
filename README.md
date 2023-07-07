@@ -21,6 +21,7 @@ Nuget: https://www.nuget.org/packages/ECDSAToECDH/
 This project aims to make using ECDSA and ECDH together more simple.
 You can create ECDSA keypairs and sign
 You can also take that keypair and perform an ECDH shared secret encryption process.
+Elliptic Curve forked from Starkbank and modified for the needs of this code base. 
 
 To Start you need to load the required information:
 
@@ -65,4 +66,19 @@ var privKeySecretHex = privateKey.secret.ToString("x");
 //Get Public Key in Hex
 var pubKey = privateKey.publicKey();
 var pubKeyHex = addPrefix ? ("04" + ByteToHex(pubKey.toString())) : ByteToHex(pubKey.toString());
+```
+
+Basic Key Creation Sample:
+```csharp
+// Generate a new Private Key
+PrivateKey privateKey = new PrivateKey();
+PublicKey publicKey = privateKey.publicKey();
+
+string message = "Hello, World!";
+
+// Generate a Signature
+Signature signature = Ecdsa.sign(message, privateKey);
+
+// Verify signature
+Console.WriteLine(Ecdsa.verify(message, signature, publicKey));
 ```
