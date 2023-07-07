@@ -11,6 +11,5 @@
         {
             return Convert.ToBase64String(bytes);
         }
-
     }
 }
